@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D32E843C2E34E65900D69CA6 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32E84302E34E65900D69CA6 /* QuizEngine.framework */; };
+		D3E8BBE22E499AB1008C3926 /* QuizEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E8BBD72E499AB1008C3926 /* QuizEngine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,11 +19,20 @@
 			remoteGlobalIDString = D32E842F2E34E65900D69CA6;
 			remoteInfo = QuizEngine;
 		};
+		D3E8BBE32E499AB1008C3926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32E84272E34E65900D69CA6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3E8BBD62E499AB1008C3926;
+			remoteInfo = QuizEngine_iOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D32E84302E34E65900D69CA6 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32E843B2E34E65900D69CA6 /* QuizEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E8BBD72E499AB1008C3926 /* QuizEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuizEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3E8BBE12E499AB1008C3926 /* QuizEngine_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizEngine_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -54,6 +64,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3E8BBD42E499AB1008C3926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E8BBDE2E499AB1008C3926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E8BBE22E499AB1008C3926 /* QuizEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +96,8 @@
 			children = (
 				D32E84302E34E65900D69CA6 /* QuizEngine.framework */,
 				D32E843B2E34E65900D69CA6 /* QuizEngineTests.xctest */,
+				D3E8BBD72E499AB1008C3926 /* QuizEngine.framework */,
+				D3E8BBE12E499AB1008C3926 /* QuizEngine_iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +106,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		D32E842B2E34E65900D69CA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E8BBD22E499AB1008C3926 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -101,9 +135,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				D32E84322E34E65900D69CA6 /* QuizEngine */,
-			);
 			name = QuizEngine;
 			packageProductDependencies = (
 			);
@@ -124,14 +155,57 @@
 			dependencies = (
 				D32E843E2E34E65900D69CA6 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D32E843F2E34E65900D69CA6 /* QuizEngineTests */,
-			);
 			name = QuizEngineTests;
 			packageProductDependencies = (
 			);
 			productName = QuizEngineTests;
 			productReference = D32E843B2E34E65900D69CA6 /* QuizEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D3E8BBD62E499AB1008C3926 /* QuizEngine_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E8BBEC2E499AB1008C3926 /* Build configuration list for PBXNativeTarget "QuizEngine_iOS" */;
+			buildPhases = (
+				D3E8BBD22E499AB1008C3926 /* Headers */,
+				D3E8BBD32E499AB1008C3926 /* Sources */,
+				D3E8BBD42E499AB1008C3926 /* Frameworks */,
+				D3E8BBD52E499AB1008C3926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D32E84322E34E65900D69CA6 /* QuizEngine */,
+			);
+			name = QuizEngine_iOS;
+			packageProductDependencies = (
+			);
+			productName = QuizEngine_iOS;
+			productReference = D3E8BBD72E499AB1008C3926 /* QuizEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3E8BBE02E499AB1008C3926 /* QuizEngine_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E8BBED2E499AB1008C3926 /* Build configuration list for PBXNativeTarget "QuizEngine_iOSTests" */;
+			buildPhases = (
+				D3E8BBDD2E499AB1008C3926 /* Sources */,
+				D3E8BBDE2E499AB1008C3926 /* Frameworks */,
+				D3E8BBDF2E499AB1008C3926 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3E8BBE42E499AB1008C3926 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D32E843F2E34E65900D69CA6 /* QuizEngineTests */,
+			);
+			name = QuizEngine_iOSTests;
+			packageProductDependencies = (
+			);
+			productName = QuizEngine_iOSTests;
+			productReference = D3E8BBE12E499AB1008C3926 /* QuizEngine_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -148,6 +222,12 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					D32E843A2E34E65900D69CA6 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D3E8BBD62E499AB1008C3926 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D3E8BBE02E499AB1008C3926 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
@@ -168,6 +248,8 @@
 			targets = (
 				D32E842F2E34E65900D69CA6 /* QuizEngine */,
 				D32E843A2E34E65900D69CA6 /* QuizEngineTests */,
+				D3E8BBD62E499AB1008C3926 /* QuizEngine_iOS */,
+				D3E8BBE02E499AB1008C3926 /* QuizEngine_iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +263,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D32E84392E34E65900D69CA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E8BBD52E499AB1008C3926 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E8BBDF2E499AB1008C3926 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,6 +300,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3E8BBD32E499AB1008C3926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3E8BBDD2E499AB1008C3926 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -211,6 +321,11 @@
 			isa = PBXTargetDependency;
 			target = D32E842F2E34E65900D69CA6 /* QuizEngine */;
 			targetProxy = D32E843D2E34E65900D69CA6 /* PBXContainerItemProxy */;
+		};
+		D3E8BBE42E499AB1008C3926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3E8BBD62E499AB1008C3926 /* QuizEngine_iOS */;
+			targetProxy = D3E8BBE32E499AB1008C3926 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +546,114 @@
 			};
 			name = Release;
 		};
+		D3E8BBE82E499AB1008C3926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dinarashadyarova.QuizEngine-iOS";
+				PRODUCT_NAME = QuizEngine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3E8BBE92E499AB1008C3926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dinarashadyarova.QuizEngine-iOS";
+				PRODUCT_NAME = QuizEngine;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3E8BBEA2E499AB1008C3926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dinarashadyarova.QuizEngine-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3E8BBEB2E499AB1008C3926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dinarashadyarova.QuizEngine-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +680,24 @@
 			buildConfigurations = (
 				D32E84482E34E65900D69CA6 /* Debug */,
 				D32E84492E34E65900D69CA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E8BBEC2E499AB1008C3926 /* Build configuration list for PBXNativeTarget "QuizEngine_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E8BBE82E499AB1008C3926 /* Debug */,
+				D3E8BBE92E499AB1008C3926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E8BBED2E499AB1008C3926 /* Build configuration list for PBXNativeTarget "QuizEngine_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E8BBEA2E499AB1008C3926 /* Debug */,
+				D3E8BBEB2E499AB1008C3926 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
